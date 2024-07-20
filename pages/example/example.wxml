@@ -1,0 +1,25 @@
+<!--pages/example/example.wxml-->
+<navigation-bar title="example" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view>
+  <view id="todo">
+  <view class="input-task">
+    <input type="text" value="{{inputText}}" bindinput="onBindInputTask" placeholder="add task"/>
+    <button bind:tap="onSubmitTask">
+      submit
+    </button>
+  </view>
+  <view class="tasks">
+    <view wx:for="{{taskList}}" wx:for-index="index" wx:for-item="task" wx:key="id">
+        <label class="task">
+          <view class="task-left">
+            <checkbox checked="{{task.checked}}" bind:tap="onChangeChecked" data-id="{{task.id}}"/>
+            <text class="{{task.checked ? 'text-checked' : ''}}">{{task.title}}</text>
+          </view>
+          <button bind:tap="onDeleteTask" data-id="{{task.id}}">
+            <icon class="icon-small" type="cancel" size="30"></icon>
+          </button>
+        </label>
+    </view>
+  </view>
+</view>
+</scroll-view>

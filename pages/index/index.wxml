@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<navigation-bar title="contoh" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <button bind:tap="onNavigateToExample">
+    example page
+  </button>
+</scroll-view>
