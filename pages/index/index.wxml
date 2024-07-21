@@ -4,4 +4,7 @@
   <button bind:tap="onNavigateToExample">
     example page
   </button>
+  <button bind:tap="onNavigateToProfile">
+    profile page
+  </button>
 </scroll-view>

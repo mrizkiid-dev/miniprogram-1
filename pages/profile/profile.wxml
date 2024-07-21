@@ -1,0 +1,11 @@
+<!--pages/profile/profile.wxml-->
+<navigation-bar title="profile" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view>
+  <view class="container">
+    <button wx:if="{{!hasUserInfo && canIUseGetUserProfile}}" bindtap="getUserProfile">Get User Profile</button>
+    <view wx:if="{{hasUserInfo}}">
+      <image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+      <text>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+</scroll-view>
