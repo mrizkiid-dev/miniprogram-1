@@ -1,0 +1,10 @@
+<!--pages/practice/practice.wxml-->
+<navigation-bar title="Practice" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view>
+  <view class="container">
+    <text class="number">{{number}}</text>
+    <button bind:tap="incraseNumber">
+      <text>tombol</text>
+    </button>
+  </view>
+</scroll-view>

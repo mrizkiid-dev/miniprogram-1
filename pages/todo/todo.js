@@ -1,3 +1,4 @@
+
 // pages/example/example.js
 Page({
 

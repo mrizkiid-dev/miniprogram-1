@@ -8,5 +8,8 @@
     <button bind:tap="onNavigateToProfile">
       Profile page
     </button>
+    <button bind:tap="onNavigateToPractice">
+      Practice page
+    </button>
   </view>
 </scroll-view>

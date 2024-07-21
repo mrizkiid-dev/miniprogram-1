@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/todo/todo",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/practice/practice",
+    "pages/example/example"
   ],
   "window": {
     "navigationBarTextStyle": "black",
