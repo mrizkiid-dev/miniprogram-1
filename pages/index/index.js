@@ -4,9 +4,9 @@ Page({
 
   },
 
-  onNavigateToExample() {
+  onNavigateToTodo() {
     wx.navigateTo({
-      url: '/pages/example/example',
+      url: '/pages/todo/todo',
     })
   },
 

@@ -1,10 +1,12 @@
 <!--index.wxml-->
-<navigation-bar title="contoh" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="HomePage" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
-  <button bind:tap="onNavigateToExample">
-    example page
-  </button>
-  <button bind:tap="onNavigateToProfile">
-    profile page
-  </button>
+  <view class="container">
+    <button bind:tap="onNavigateToTodo">
+     Todo page
+    </button>
+    <button bind:tap="onNavigateToProfile">
+      Profile page
+    </button>
+  </view>
 </scroll-view>

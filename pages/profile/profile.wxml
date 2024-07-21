@@ -2,10 +2,12 @@
 <navigation-bar title="profile" back="{{true}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view>
   <view class="container">
-    <button wx:if="{{!hasUserInfo && canIUseGetUserProfile}}" bindtap="getUserProfile">Get User Profile</button>
-    <view wx:if="{{hasUserInfo}}">
-      <image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
-      <text>{{userInfo.nickName}}</text>
+    <view wx:if="{{userInfo.name}}" class="profile-container">
+      <image src="{{userInfo.image}}" class="image" mode="widthFix"></image>
+      <view class="profile-detail">
+        <text class="name">{{userInfo.name}}</text>
+        <text class="bio">{{userInfo.bio}}</text>
+      </view>
     </view>
   </view>
 </scroll-view>

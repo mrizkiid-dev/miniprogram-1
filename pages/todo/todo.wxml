@@ -1,5 +1,5 @@
 <!--pages/example/example.wxml-->
-<navigation-bar title="example" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="Todo Task" back="{{true}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view>
   <view id="todo">
   <view class="input-task">

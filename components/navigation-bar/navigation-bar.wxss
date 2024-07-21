@@ -88,6 +88,12 @@
   animation: loading linear infinite 1s;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 @keyframes loading {
   from {
     transform: rotate(0);
